@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Futura:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Futura', sans-serif;
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            color: #4a148c;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a1b9a;
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .schedule-table th, .schedule-table td {
+            border: 1px solid rgba(206, 147, 216, 0.5); 
+            padding: 15px;
+            text-align: center;
+        }
+
+        .schedule-table th {
+            background-color: rgba(186, 104, 200, 0.8);
+            color: white;
+        }
+
+        .schedule-table tr:nth-child(even) {
+            background-color: rgba(243, 229, 245, 0.5);
+        }
+
+        .schedule-table tr:nth-child(odd) {
+            background-color: rgba(225, 190, 231, 0.5);
+        }
+
+        .schedule-table tr:hover {
+            background-color: rgba(206, 147, 216, 0.8); 
+            color: white;
+        }
+
+        .block, .course, .time, .day, .instructor {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CEIT-37-304P Schedule</h1>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th class="block">Block</th>
+                <th class="course">Course Name</th>
+                <th class="time">Time</th>
+                <th class="day">Day</th>
+                <th class="instructor">Instructor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITE210 - Object-Oriented Programming</td>
+                <td class="time">9:00 AM - 11:00 AM</td>
+                <td class="day">Monday</td>
+                <td class="instructor">Engr. Julius Cabauatan</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITE212 - Web Systems and Technologies</td>
+                <td class="time">12:30 PM - 2:30 PM</td>
+                <td class="day">Monday</td>
+                <td class="instructor">Instr. Eunice Sison</td>
+            </tr>
+            <tr>
+                <td class="block">PE-COMMON-125P</td>
+                <td class="course">PE03 - Physical Activities Towards Health and Fitness I</td>
+                <td class="time">3:00 PM - 5:00 PM</td>
+                <td class="day">Monday</td>
+                <td class="instructor">Instr. Mark Kevin Lacdao</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITE212L - Web Systems and Technologies Laboratory</td>
+                <td class="time">11:30 AM - 2:30 PM</td>
+                <td class="day">Wednesday</td>
+                <td class="instructor">Instr. Eunice Sison</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITE211 - Platform Technologies</td>
+                <td class="time">4:00 PM - 6:00 PM</td>
+                <td class="day">Wednesday</td>
+                <td class="instructor">Instr. Michael Fernandez</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITE211L - Platform Technologies Laboratory</td>
+                <td class="time">6:00 PM - 9:00 PM</td>
+                <td class="day">Wednesday</td>
+                <td class="instructor">Instr. Michael Fernandez</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITC210L - Information Management Laboratory</td>
+                <td class="time">1:30 PM - 4:30 PM</td>
+                <td class="day">Thursday</td>
+                <td class="instructor">Instr. Aphril Alcalde</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITC210 - Information Management Laboratory</td>
+                <td class="time">1:30 PM - 3:30 PM</td>
+                <td class="day">Friday</td>
+                <td class="instructor">Instr. Aphril Alcalde</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITC211L - Data Structures and Algorithms Laboratory</td>
+                <td class="time">4:00 PM - 7:00 PM</td>
+                <td class="day">Friday</td>
+                <td class="instructor">Instr. Rowena Reyes</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITC211 - Data Structures and Algorithms</td>
+                <td class="time">7:00 PM - 9:00 PM</td>
+                <td class="day">Friday</td>
+                <td class="instructor">Instr. Rowena Reyes</td>
+            </tr>
+            <tr>
+                <td class="block">CEIT-37-304P</td>
+                <td class="course">ITC210L - Object-Oriented Programming Laboratory</td>
+                <td class="time">9:30 PM - 12:30 PM</td>
+                <td class="day">Saturday</td>
+                <td class="instructor">Engr. Julius Cabauatan</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
